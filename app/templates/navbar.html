@@ -1,0 +1,56 @@
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4285f4;
+        color: #fff;
+        padding: 0.2rem;
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      
+      .logo img {
+        margin-right: 0.5rem;
+      }
+      
+      .nav-links ul {
+        display: flex;
+        list-style: none;
+      }
+      
+      .nav-links li {
+        margin-right: 1rem;
+      }
+      
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+      
+</style>
+<header class="navbar">
+    <div class="logo">
+      <img src="https://www.gstatic.com/images/branding/product/1x/classroom_48dp.png" alt="Google Classroom Logo">
+      <h1>Google Classroom</h1>
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Classwork</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">User: <span class="">{{request.user.username}}</span></a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+  
